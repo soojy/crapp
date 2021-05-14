@@ -15,7 +15,7 @@ function calculate(e,form) {
   return false
 }
 $.get({
-  url: "http://localhost:3060/list",
+  url: "http://8d5d1637795c.ngrok.io/list",
   success: function (data) {
     array = data
     $.each(array, function (key, value) {

@@ -15,14 +15,14 @@ function calculate(e,form) {
   return false
 }
 $.get({
-  url: "http://8d5d1637795c.ngrok.io/list",
+  url: "https://8d5d1637795c.ngrok.io/list",
   success: function (data) {
     array = data
     $.each(array, function (key, value) {
 
       $("#result").append(`
         <div class="item">
-        <img src="http://8d5d1637795c.ngrok.io//img/${value.iconUrl}" alt="btc" class="icon" />
+        <img src="https://8d5d1637795c.ngrok.io//img/${value.iconUrl}" alt="btc" class="icon" />
         <h3 class="item-title">${value.name}<span>${value.shortName}</span></h3>
           <h4 class="item-subtitle">
           ${value.description}
